@@ -1,15 +1,10 @@
 
-<!--
-	Author: W3layouts
-	Developed By Ravi Khadka
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
+-
 -->
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-<title>Scholarly an Education Category Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>Home :: auspicious</title>
 <!-- Meta tag Keywords -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -41,7 +36,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-			<h1><a class="navbar-brand" href="index.html"><i class="fa fa-leanpub" aria-hidden="true"></i> scholarly</a></h1>
+			<h1><a class="navbar-brand" href="index.html"><i class="fa fa-leanpub" aria-hidden="true"></i> SPCFI</a></h1>
 
 			</div>
 			<div class="w3layouts_header_right">
@@ -51,7 +46,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</form>
 			</div>
 			<ul class="agile_forms">
-				<li><a class="active" href="students/index.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In now</a> </li>
+				<li><a class="active" href="students/index.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In</a> </li>
 			<!--	<li><a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up</a> </li> -->
 			</ul>
 			
@@ -207,12 +202,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<img src="images/ab1.jpg" alt="">
 			</div>
 			<div class="wthree-services-right">
-				<img src="images/ab2.jpg" alt="">
-			</div>
+    <img src="images/spcfi.jpg" alt="" style="width: 100%; max-width: 450px; height: auto;">
+</div>
+
 			<div class="clearfix"> </div>
 		</div>
 		<div class="col-md-5 wthree-about-grids">
-			<h4>Welcome to Our University</h4>
+			<h4>Welcome</h4>
 			<a href="#" class="trend-w3l" data-toggle="modal" data-target="#myModal"><span>Read More</span></a>
 			<a href="#mail" class="trend-w3l scroll"><span>Get In Touch</span></a>
 		</div>
@@ -235,39 +231,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 </div>
 <!-- //modal --> 
 <!-- //about -->
-<!--stats-->
-<div class="stats" id="stats">
-	<div class="container">
-		<div class="stats-info">
-			<div class="col-md-3 col-xs-3 stats-grid slideanim">
-				<i class="fa fa-users" aria-hidden="true"></i>
-				<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='12760' data-delay='.5' data-increment="1">12760</div>
-				
-				<h4 class="stats-info">FOREIGN FOLLOWERS</h4>
-			</div>
-			<div class="col-md-3 col-xs-3 stats-grid slideanim">
-				<i class="fa fa-book" aria-hidden="true"></i>
-				<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='31000' data-delay='.5' data-increment="1">31000</div>
-				
-				<h4 class="stats-info">CLASSES COMPLETE</h4>
-			</div>
-			<div class="col-md-3 col-xs-3 stats-grid slideanim">
-				<i class="fa fa-trophy" aria-hidden="true"></i>
-				<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='79000' data-delay='.5' data-increment="10">79000</div>
-				
-				<h4 class="stats-info">STUDENTS ENROLLED</h4>
-			</div>
-			<div class="col-md-3 col-xs-3 stats-grid slideanim">
-					<i class="fa fa-user" aria-hidden="true"></i>
-				<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='600' data-delay='.5' data-increment="1">600</div>
-			
-				<h4 class="stats-info">CERTIFIED TEACHERS</h4>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<!--//stats-->
+
 <!-- services -->
 <div class="services" id="services" >
 	<div class="container">  
@@ -627,11 +591,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</div>
 	</div>
 </div>
-<div class="w3layouts_copy_right">
-	<div class="container">
-		<p>© <?php echo $general_fetch['website_start']; ?> - 2018 Scholarly. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts.</a> Developed By Ravi Khadka</p>
-	</div>
-</div>
+
 	<?php } else{ ?>
 
 	<div id="mail" class="contact">
@@ -741,10 +701,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</div>
 	</div>
 </div>
-<div class="w3layouts_copy_right">
-	<div class="container">
-		<p>© <?php echo $general_fetch['website_start']; ?> - 2018 Scholarly. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts.</a> Developed By Ravi Khadka</p>
-	</div>
+
 </div>
 	<?php }?>
 	<!-- //footer -->
@@ -756,25 +713,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //js-files -->
 <!-- Baneer-js -->
 
-<!-- Map-JavaScript -->
-			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>        
-			<script type="text/javascript">
-				google.maps.event.addDomListener(window, 'load', init);
-				function init() {
-					var mapOptions = {
-						zoom: 11,
-						center: new google.maps.LatLng(40.6700, -73.9400),
-						styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
-					};
-					var mapElement = document.getElementById('map');
-					var map = new google.maps.Map(mapElement, mapOptions);
-					var marker = new google.maps.Marker({
-						position: new google.maps.LatLng(40.6700, -73.9400),
-						map: map,
-					});
-				}
-			</script>
-		<!-- //Map-JavaScript -->
+
 
 <!-- smooth scrolling -->
 <script src="js/SmoothScroll.min.js"></script>

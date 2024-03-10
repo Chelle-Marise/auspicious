@@ -16,12 +16,7 @@ else
 
 
 ?>
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE HTML>
 <html>
 
@@ -125,7 +120,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<p> <strong>Address:</strong>
 													<?php echo ucfirst($student_name_display['st_address']); ?>
 												</p>
-												<p> <strong>District:</strong>
+												<p> <strong>Contact Details:</strong>
 													<?php echo ucfirst($student_name_display['st_district']); ?>
 												</p>
 												<p> <strong>Username:</strong>

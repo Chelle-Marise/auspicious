@@ -1,5 +1,22 @@
 
--
+
+<?php
+if ($_SERVER['SERVER_NAME'] !== 'localhost') {
+ 
+    $server ="sql101.infinityfree.com";
+	$username ="if0_36131522";
+	$password ="IAMbcc8i";
+	$dbname ="if0_36131522_auspicious";
+
+	$conn  =  mysql_connect($server. $username, $password, $dbname);
+
+	if(!$conn){
+		die("Connection Failed:".mysqli_connect_error());
+	}
+}	
+?>
+*/
+
 -->
 <!DOCTYPE html>
 <html lang="zxx">
@@ -56,7 +73,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="index.html" class="effect-3">Home</a></li>
 						<li><a href="#about" class="effect-3 scroll">About Us</a></li>
-						<li><a href="#services" class="effect-3 scroll">Services</a></li>
+						<li><a href="#services" class="effect-3 scroll">Bulletin Board</a></li>
 						<li><a href="#team" class="effect-3 scroll">Team</a></li>
 						<li><a href="#gallery" class="effect-3 scroll">Gallery</a></li>
 						<li><a href="#mail" class="effect-3 scroll">Mail Us</a></li>
@@ -163,11 +180,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
 			<!--
 				<div class="signin-form profile">
-					<h3 class="agileinfo_sign">Sign Up</h3>	
+					<h3 class="agileinfo_sigrname" placeholder="Username" required="">
+							<input type="email" name="emn">Sign Up</h3>	
 					<div class="login-form">
 						<form method="post" >
-						   <input type="text" name="username" placeholder="Username" required="">
-							<input type="email" name="email" placeholder="Email" required="">
+						   <input type="text" name="useail" placeholder="Email" required="">
 							<input type="password" name="password" placeholder="Password" required="">
 							<select class="form-control" name="grade" required="">
 							
@@ -192,29 +209,32 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //Modal2 -->	
 <!-- about -->
 <div class="about-top" id="about">
-	<div class="container">
-		<h3 class="w3l-title">About Us</h3>
-		<div class="w3layouts_header">
-			<p><i class="fa fa-graduation-cap" aria-hidden="true"></i></p>
-		</div>
-		<div class="col-md-7 wthree-services-bottom-grids">
-			<div class="wthree-services-left">
-				<img src="images/ab1.jpg" alt="">
-			</div>
-			<div class="wthree-services-right">
-    <img src="images/spcfi.jpg" alt="" style="width: 100%; max-width: 450px; height: auto;">
+    <div class="container">
+        <h3 class="w3l-title">About Us</h3>
+        <div class="w3layouts_header">
+            <p><i class="fa fa-graduation-cap" aria-hidden="true"></i></p>
+        </div>
+        <div class="col-md-7 wthree-services-bottom-grids">
+            <div class="wthree-services-left">
+                <img src="images/ab1.jpg" alt="">
+            </div>
+            <div class="wthree-services-right">
+                <img src="images/spcfi.jpg" alt="" style="width: 100%; max-width: 450px; height: auto;">
+            </div>
+
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-5 wthree-about-grids">
+            <h4>Welcome</h4>
+            <a href="#" class="trend-w3l" data-toggle="modal" data-target="#myModal"><span>Read More</span></a>
+            <!-- Direct link to Facebook -->
+            <a href="https://www.facebook.com/spcfpaniqui" target="_blank" class="trend-w3l"><span>Visit Us on Facebook</span></a>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
 </div>
 
-			<div class="clearfix"> </div>
-		</div>
-		<div class="col-md-5 wthree-about-grids">
-			<h4>Welcome</h4>
-			<a href="#" class="trend-w3l" data-toggle="modal" data-target="#myModal"><span>Read More</span></a>
-			<a href="#mail" class="trend-w3l scroll"><span>Get In Touch</span></a>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-</div>
+
 <!-- modal -->
 <div class="modal about-modal w3-agileits fade" id="myModal" tabindex="-1" role="dialog">
 	<div class="modal-dialog" role="document">
@@ -233,9 +253,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //about -->
 
 <!-- services -->
-<div class="services" id="services" >
+<div class="Bulletin Board" id="services" >
 	<div class="container">  
-		<h3 class="w3l-title">Our Services</h3>
+		<h3 class="w3l-title">Announcement</h3>
 		<div class="w3layouts_header">
 			<p><i class="fa fa-graduation-cap" aria-hidden="true"></i></p>
 		</div>
@@ -243,19 +263,19 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<div class="col-xs-4 services-grid agileits-w3layouts">
 				<span class="fa fa-graduation-cap" aria-hidden="true"></span>
 				<h6>01</h6>
-				<h5>Scholarship Facility</h5>
+				<h5>Unifast</h5>
 				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien. Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
 			</div>
 			<div class="col-xs-4 services-grid agileits-w3layouts">
 				<h6>02</h6>
-				<h5>Skilled Lecturers</h5>
+				<h5>Enrolment</h5>
 				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien. Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
 				<span class="fa fa-user-o grid-w3l-ser" aria-hidden="true"></span>
 			</div>
 			<div class="col-xs-4 services-grid agileits-w3layouts">
 				<span class="fa fa-book" aria-hidden="true"></span>
 				<h6>03</h6>
-				<h5>Book Library & Store</h5>
+				<h5>New Courses Offered</h5>
 				<p>Itaque earum rerum hic a sapiente delectus in auctor sapien. Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
 			</div> 
 			<div class="clearfix"> </div>
@@ -263,6 +283,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	</div>
 </div>
 <!-- //services -->
+
 <!-- Gallery -->
 <section class="portfolio-w3ls" id="gallery">
 		<h3 class="w3l-title">Our Gallery</h3>
@@ -272,7 +293,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="col-md-3 col-xs-3 gallery-grid gallery1">
 					<a href="images/g1.jpg" class="swipebox"><img src="images/g1.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>scholarly</h4>
+						<h4>SPCFI</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -280,7 +301,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="col-md-3 col-xs-3 gallery-grid gallery1">
 					<a href="images/g2.jpg" class="swipebox"><img src="images/g2.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>scholarly</h4>
+						<h4>SPCFI</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -288,63 +309,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="col-md-3 col-xs-3 gallery-grid gallery1">
 					<a href="images/g3.jpg" class="swipebox"><img src="images/g3.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>scholarly</h4>
-							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
-						</div>
-				</a>
-				</div>
-				<div class="col-md-3 col-xs-3 gallery-grid gallery1">
-					<a href="images/g7.jpg" class="swipebox"><img src="images/g7.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-						<h4>scholarly</h4>
-							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
-						</div>
-				</a>
-				</div>
-				<div class="col-md-3 col-xs-3 gallery-grid gallery1">
-					<a href="images/g5.jpg" class="swipebox"><img src="images/g5.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-						<h4>scholarly</h4>
-							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 col-xs-3 gallery-grid gallery1">
-					<a href="images/g6.jpg" class="swipebox"><img src="images/g6.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-						<h4>scholarly</h4>
-							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
-					   </div>
-				   </a>
-				</div>
-				<div class="col-md-3 col-xs-3 gallery-grid gallery1">
-					<a href="images/g11.jpg" class="swipebox"><img src="images/g11.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-						<h4>scholarly</h4>
-							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
-					   </div>
-				   </a>
-				</div>
-				<div class="col-md-3 col-xs-3 gallery-grid gallery1">
-					<a href="images/g8.jpg" class="swipebox"><img src="images/g8.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-						<h4>scholarly</h4>
-							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
-					   </div>
-				   </a>
-				</div>
-					<div class="col-md-3 col-xs-3 gallery-grid gallery1">
-					<a href="images/g9.jpg" class="swipebox"><img src="images/g9.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-						<h4>scholarly</h4>
-							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
-						</div>
-				</a>
-				</div>
-				<div class="col-md-3 col-xs-3 gallery-grid gallery1">
-					<a href="images/g10.jpg" class="swipebox"><img src="images/g10.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-						<h4>scholarly</h4>
+						<h4>SPCFI</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -352,19 +317,44 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="col-md-3 col-xs-3 gallery-grid gallery1">
 					<a href="images/g4.jpg" class="swipebox"><img src="images/g4.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>scholarly</h4>
+						<h4>SPCFI</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
 				</div>
 				<div class="col-md-3 col-xs-3 gallery-grid gallery1">
-					<a href="images/g12.jpg" class="swipebox"><img src="images/g12.jpg" class="img-responsive" alt="/">
+					<a href="images/g5.jpg" class="swipebox"><img src="images/g5.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>scholarly</h4>
+						<h4>sSPCFI</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
-				</a>
+					</a>
 				</div>
+				<div class="col-md-3 col-xs-3 gallery-grid gallery1">
+					<a href="images/g6.jpg" class="swipebox"><img src="images/g6.jpg" class="img-responsive" alt="/">
+						<div class="textbox">
+						<h4>SPCFI</h4>
+							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
+					   </div>
+				   </a>
+				</div>
+				<div class="col-md-3 col-xs-3 gallery-grid gallery1">
+					<a href="images/g2.jpg" class="swipebox"><img src="images/g2.jpg" class="img-responsive" alt="/">
+						<div class="textbox">
+						<h4>SPCFI</h4>
+							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
+					   </div>
+				   </a>
+				</div>
+				<div class="col-md-3 col-xs-3 gallery-grid gallery1">
+					<a href="images/g3.jpg" class="swipebox"><img src="images/g3.jpg" class="img-responsive" alt="/">
+						<div class="textbox">
+						<h4>SPCFI</h4>
+							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
+					   </div>
+				   </a>
+				</div>
+				
 				<div class="clearfix"> </div>
 </section>
 <!-- //gallery -->
@@ -380,14 +370,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="about_img"><img src="images/t1.jpg" alt="">
 				  <h5>Victoria</h5>
 				  <div class="about_opa">
-					<p>Professor</p>
-					<ul class="fb_icons2 text-center">
-						<li><a class="fa fa-facebook" href="#"></a></li>
-						<li><a class="fa fa-twitter" href="#"></a></li>
-						<li><a class="fa fa-google" href="#"></a></li>
-						<li><a class="fa fa-linkedin" href="#"></a></li>
-						<li><a class="fa fa-pinterest-p" href="#"></a></li>
-					</ul>
+					
 				  </div>
 				</div>
 			</div>
@@ -553,40 +536,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 </div>
 <div id="map"></div>
 <!-- footer -->
-<div class="footer">
-	<div class="container">
-		<div class="wthree_footer_grid_left">
-			<div class="col-md-3 col-xs-3 wthree_footer_grid_left1">
-				<h4>About Us</h4>
-				<p><?php echo $general_fetch['web_about']; ?></p>
-			</div>
-			<div class="col-md-3 col-xs-3 wthree_footer_grid_left1">
-				<h4>Navigation</h4>
-				<ul>
-					<li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="index.html">Home</a></li>
-					<li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#about" class="scroll">About Us</a></li>
-					<li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#services" class="scroll">Services</a></li>
-					<li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#team" class="scroll">Team</a></li>
-					<li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#gallery" class="scroll">Gallery</a></li>
-					<li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#mail" class="scroll">Mail Us</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 col-xs-3 wthree_footer_grid_left1 w3l-3">
-				<h4>Others</h4>
-				<ul>
-					<li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#">Media</a></li>
-					<li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#">Mobile Apps</a></li>
-					<li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#">Privacy Policy</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 col-xs-3 wthree_footer_grid_left1 wthree_footer_grid_right1">
-				<h4>Contact Us</h4>
-				<ul>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:info@example.com"><?php echo $general_fetch['website_email1']; ?></a></li>
-					<li><i class="fa fa-phone" aria-hidden="true"></i><?php echo $general_fetch['website_phone1']; ?></li>
-					<li><i class="fa fa-fax" aria-hidden="true"></i><?php echo $general_fetch['website_address']; ?></li>
-				</ul>
-			</div>
+
+			
 			<div class="clearfix"> </div>
 		</div>
 	</div>

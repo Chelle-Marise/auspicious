@@ -100,43 +100,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<p> <strong>WELCOME</strong>,
 													<?php echo ucfirst($student_name_display['st_fullname']); ?>
 												</p>
-												<p><strong>standard: </strong>
-													<?php echo ucfirst($student_name_display['st_grade']); ?>
+												<p><strong>Course: </strong>
+													<?php echo ucfirst($student_name_display['st_course']); ?>
 												</p>
-												<p><strong>Roll No: </strong>
-													<?php echo ucfirst($student_name_display['roll_no']); ?>
+												<p><strong>Student Id number: </strong>
+													<?php echo ucfirst($student_name_display['st_id_number']); ?>
 												</p>
-												<p><strong>Gender: </strong>
-													<?php echo ucfirst($student_name_display['st_gender']); ?>
-												</p>
+
 												<p> <strong>Date of Birth:</strong>
 													<?php echo ucfirst($student_name_display['st_dob']); ?>
 												</p>
 
 											</div>
 											<div class="mediabox">
-												<strong>Contact Details</strong>
-
+												<strong>Contact</strong>
+												
 												<p> <strong>Address:</strong>
 													<?php echo ucfirst($student_name_display['st_address']); ?>
-												</p>
-												<p> <strong>Contact Details:</strong>
-													<?php echo ucfirst($student_name_display['st_district']); ?>
 												</p>
 												<p> <strong>Username:</strong>
 													<?php echo ucfirst($student_name_display['st_username']); ?>
 												</p>
+												<p> <strong>Contact Details:</strong>
+													<?php echo ucfirst($student_name_display['st_contact_details']); ?>
+												</p>
 											</div>
 											<div class="mediabox">
-												<strong>Parents Detail</strong>
-												<p><strong>Father Name: </strong>
-													<?php echo ucfirst($student_name_display['st_father']); ?>
+												<strong>Guardian</strong>
+												<p><strong>Name: </strong>
+													<?php echo ucfirst($student_name_display['st_guardian']); ?>
 												</p>
-												<p><strong>Mother Name: </strong>
-													<?php echo ucfirst($student_name_display['st_mother']); ?>
-												</p>
-												<p><strong>Parents Contact: </strong>
-													<?php echo ucfirst($student_name_display['st_parents_contact']); ?>
+												<p><strong>Contact Details: </strong>
+													<?php echo ucfirst($student_name_display['st_contact_details_of_guardian']); ?>
 												</p>
 											</div>
 										</section>
@@ -210,7 +205,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																	</thead> 
 																	<tbody>
 															<?php 
-															$st_grade = $student_name_display['st_grade'];
+															$st_grade = $student_name_display['st_course'];
 															$sn = 1;
 															$teacher_info_in_student = $ravi->teacher_info_instudent($st_grade);
 																while($t_info = $teacher_info_in_student->fetch_assoc())		{ 
@@ -249,7 +244,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																	</thead> 
 																	<tbody>
 															<?php 
-															$st_grade = $student_name_display['st_grade'];
+															$st_grade = $student_name_display['st_course'];
 															$sn = 1;
 															$teacher_info_in_student = $ravi->teacher_info_instudent($st_grade);
 																while($t_info = $teacher_info_in_student->fetch_assoc())		{ 
@@ -380,11 +375,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<!--//outer-wp-->
 				</div>
-				<!--footer section start-->
-				<footer>
-					<p>&copy 2018 Augment . All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">W3layouts.</a> and Develop By Ravi Khadka</p>
-				</footer>
-				<!--footer section end-->
+				
 			</div>
 		</div>
 		<!--//content-inner-->

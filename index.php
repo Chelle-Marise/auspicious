@@ -107,21 +107,21 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<li class="agileits-main"><i class="fa fa-user-o" aria-hidden="true"></i><input name="name" type="text" required=""></li>
 							<li class="text">Date of Birth :  </li>
 							<li class="agileits-main"><i class="fa fa-calendar" aria-hidden="true"></i><input class="date" id="datepicker" name="Text" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="" /></li>
-							<li class="text">Father Name  :  </li>
+							<li class="text">Guardian  :  </li>
 							<li class="agileits-main"><i class="fa fa-user-o" aria-hidden="true"></i><input name="name" type="text" required=""></li>
-							<li class="text">Gender  :  </li>
+							<li class="text">Guardian's Contact Detail  :  </li>
 							<li class="agileits-main"><i class="fa fa-user-o" aria-hidden="true"></i><input name="gender" type="text" required=""></li>
 						</ul>
 					</div>
 					<div class="col-md-6 col-xs-6 w3l-right-mk">
 						<ul>
-							<li class="text">mobile no  :  </li>
+							<li class="text">Contact Detail  :  </li>
 							<li class="agileits-main"><i class="fa fa-phone" aria-hidden="true"></i><input name="mobile" type="text" required=""></li>
 							<li class="text">Address  :  </li>
 							<li class="agileits-main"><i class="fa fa-home" aria-hidden="true"></i><input name="address" type="text" required=""></li>
-							<li class="text">District  :  </li>
+							<li class="text">Email  :  </li>
 							<li class="agileits-main"><i class="fa fa-map-marker" aria-hidden="true"></i><input name="address" type="text" required=""></li>
-							<li class="text">State  :  </li>
+							<li class="text">Course  :  </li>
 							<li class="agileits-main"><i class="fa fa-map-marker" aria-hidden="true"></i><input name="address" type="text" required=""></li>
 						</ul>
 					</div>
@@ -331,7 +331,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					</a>
 				</div>
 				<div class="col-md-3 col-xs-3 gallery-grid gallery1">
-					<a href="images/g6.jpg" class="swipebox"><img src="images/g6.jpg" class="img-responsive" alt="/">
+					<a href="images/g4.jpg" class="swipebox"><img src="images/g4.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
 						<h4>SPCFI</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
